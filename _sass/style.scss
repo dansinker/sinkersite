@@ -20,11 +20,15 @@ body {
     }
 
     h1,h2,h3,h4,h5,h6 {
-         font-family: "Lato", "Helvetica Neue", Helvetica, sans-serif;
+         font-family: "Cooper Black", Helvetica, sans-serif;
          font-weight: bold;
          line-height: 1.8;
          margin: 0;
          text-transform: capitalize;
+    }
+
+    h2 {
+      color: $brand-color;
     }
 
 
@@ -32,7 +36,7 @@ a {
     color: $brand-color;
     text-decoration: none;
     &:hover{
-     color: $text-color;   
+     color: $text-color;
     }
 }
 
@@ -89,35 +93,21 @@ blockquote {
 
 
 .headline, .post-headline {
-    font-size: 4em;
+    font-size: 3.5em;
     margin-bottom: 0.5em;
-    
+
         @include media-query($on-palm) {
             font-size: 2em;
         }
     }
 
-
+/* shit for the home page */
+#columns {
+  column-count: 2;
+}
 /* Home Button */
 .home {
-    background-image: url(../images/left-arrow.svg);
-    background-repeat: no-repeat;
-    height: 40px;
-    width: 40px;
-    opacity: 0.9;
-    position: fixed;
-    top: 50px;
-    left: 50px;
-    &:hover{
-    opacity: 1;
-    }
-    @include media-query($on-laptop) {
-        top: 90%;
-        left: 90%;
-        height: 30px;
-        width: 30px;
-        opacity: 0.6;
-    }
+  background-image: url(./images/sinker_head.png)
 }
 
 
@@ -137,7 +127,7 @@ blockquote {
     }
     @include media-query($on-palm) {
         height: 180px;
-    }   
+    }
 }
 
 // Adding 'Contents' headline to the TOC

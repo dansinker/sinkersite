@@ -9,7 +9,6 @@ layout: compress
   <title>{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
 <!--   <link href="https://fonts.googleapis.com/css?family=Lato:900|Work+Sans" rel="stylesheet"> -->
   <link rel="stylesheet" href="{{site.baseurl}}/css/main.css">
-  {% seo %}
 </head>
 <body style="background-color: rgb(255, 255, 255)">
  <script async src="{{site.baseurl}}/js/theme.min.js"></script>
@@ -27,9 +26,8 @@ layout: compress
     <div class="links">
         <a href="{{site.baseurl}}/about/">About</a>
         <a href="{{site.baseurl}}/contact/">Contact</a>
-        <a class="theme" onclick="theme()">Dark/Light</a>
     </div>
-    <p class="copy"><small>Copyrights by {{site.title}} | Developed by <a href="http://webjeda.com">webjeda</a></small></p>
+    <p class="copy"><small>Copyrights by {{site.title}} | Hagura theme developed by <a href="http://webjeda.com">webjeda</a></small></p>
 </footer>
 {% include analytics.html %}
 </body>
