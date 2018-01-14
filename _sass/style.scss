@@ -105,10 +105,18 @@ blockquote {
 #columns {
   column-count: 2;
 }
-/* Home Button */
-.home {
-  background-image: url(./images/sinker_head.png)
-}
+/* my pic */
+main {
+    background-image: url("../images/sinker_head.png");
+    background-size: 150px;
+    background-repeat: no-repeat;
+    background-position: top 5px right 10px;
+    @include media-query($on-palm) {
+        background-image: none;
+    }
+  }
+
+
 
 
 
