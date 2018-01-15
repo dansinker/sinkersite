@@ -1,48 +1,48 @@
 - title: Trump Poop Watch
   link: http://www.trumppoopwatch.org
-  date:
+  date: 2017-present
   oneline: A website to track Trump's visits to his own properties.
-- title: Says Who Podcast
-  link:
-  date:
-  oneline:
 - title: SRCCON:Work
-  link:
-  date:
-  oneline:
+  link: http://work.srccon.org
+  date: December 2017
+  oneline: A conference from OpenNews dedicated to fixing newsroom culture.
+- title: Says Who Podcast
+  link: http://www.sayswhopodcast.com
+  date: 2016-present
+  oneline: A biweekly podcast that's not a podcast, it's a coping strategy for living in Trump's America. Hosted with Maureen Johnson.
+- title: Someone With Tiny Hands
+  link: https://www.wired.com/2016/03/political-chrome-extensions-donald-trump/
+  date: 2016
+  oneline: A Chome extension I wrote that accidently caused Wired magazine to refer to Trump as "Someone with Tiny Hands."
 - title: SRCCON
-  link:
-  date:
-  oneline:
+  link: http://www.srccon.org
+  date: 2014-present
+  oneline: A yearly conference from OpenNews that brings together journalism-technologists for deep collaboration.
+- title: Tacofancy
+  link: https://github.com/sinker/tacofancy
+  date: 2013-present
+  oneline: A github repository for object-oriented, collaborative taco creation.
 - title: Mobile Judges
   link:
-  date:
-  oneline:
+  date: 2012-2016
+  oneline: A site that formatted recommendations for Illinois judicial retention elections into a mobile site.
 - title: Source
-  link:
-  date:
-  oneline:
-- title: Tacofancy
-  link:
-  date:
-  oneline:
-- title: Someone With Tiny Hands
-  link:
-  date:
-  oneline:
+  link: http://source.opennews.org
+  date: 2012-present
+  oneline: A site from OpenNews that looks behind-the-scenes at the work happening in newsroom tech.
 - title: CellStories
   link:
-  date:
-  oneline:
+  date: 2008-2009
+  oneline: A site that published short fiction five days a week formatted exclusively for mobile phones before that was actually a thing.
 - title: Bail magazine
   link:
-  date:
-  oneline:
+  date: 2004
+  oneline: A quarterly magazine dedicated to the art and culture that grew out of skateboarding in the 1980s and 90s.
 - title: Punk Planet Books
-  link:
-  date:
-  oneline:
+  link: http://www.akashicbooks.com/catalog-tag/punk-planet-books/
+  date: 2003-2007
+  oneline: The book publishing arm of Punk Planet magazine, a partnership with Akashic Books.
 - title: Punk Planet Magazine
-  link:
-  date:
-  oneline: 
+  link: http://www.punkplanet.com
+  date: 1994-2007
+  oneline: A music, politics, and culture magazine chronicling the fiercely independent culture of punk rock.

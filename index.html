@@ -19,7 +19,7 @@ layout: default
       <h2>Stuff I've Made</h2>
       <ul>
       {% for thing in site.data.things %}
-        <li>{{ thing.title }}</li>
+        <li>{% if thing.link != null %}<a href="{{ thing.link }}">{{ thing.title }}</a>{% else %}<b>{{ thing.title }}</b>{% endif %}: {{ thing.oneline }} {{ thing.date }} </li>
       {% endfor %}
     </ul>
       <h2>My Books</h2>
