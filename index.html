@@ -31,6 +31,11 @@ layout: default
     <h2>Speaking</h2>
       <p>I want to come speak at your thing about the current state of journalism innovation, independent production, making things that matter or whatever else you'd like me to come talk about (I mean, within reason). I'm represented by the <a href="http://www.chartwellspeakers.com/speaker/dan-sinker/">Chartwell Speakers Bureau</a> so click through and get in touch.</p>
     <h2>Press</h2>
-      <p>I've appeared on TV, been written up in magazines and newspapers, done podcasts, whatever. If you'd like to get in touch to cover something I'm up to, feel free to get in touch. I'd love to hear from you!
+      <p>I've appeared on TV, been written up in magazines and newspapers, done podcasts, whatever. If you'd like to get in touch to cover something I'm up to, feel free to <a href="mailto:dansinker@gmail.com">get in touch</a>. I'd love to hear from you!
+    <h2>Drop a line</h2>
+      <p>If you're looking for me, here are the best places to find me:
+        {% for contact in site.data.contacts %}
+        <li>{{ contact.service }}: <a href="{{ contact.link }}">{{ contact.userid }}</a>
+        {% endfor %}
     <!--<div style="background-color:#000000;width:100%;height:100%;"><div style="padding:4px;"><iframe src="//media.mtvnservices.com/embed/mgid:arc:video:comedycentral.com:3ac26644-ed01-11e0-aca6-0026b9414f30" width="800" height="400" frameborder="0" allowfullscreen="true"></iframe></div></div>-->
 </div>
