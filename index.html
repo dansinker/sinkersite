@@ -6,23 +6,28 @@ layout: default
     <h2>Hi There</h2>
       <p>I love building things that resonate with communities. I started making things when I was 19 years old and have never stopped. I've founded companies and organizations, written books, hosted podcasts, crafted essays and articles, made art, and so much more.</p>
       <p>I'm constantly trying new things at home in Chicago or traveling around with my wife, two kids, and our dog.</p>
-      <p>I'd love to hear from you, so hit me on Twitter or email.
+      <p>I'd love to hear from you, so hit me on <a href="http://www.twitter.com/dansinker">Twitter</a> or <a href="mailto:dansinker@gmail.com">email</a>.
     <h2>Things I&rsquo;ve done</h2>
-      <p>Currently I am the director of OpenNews, which helps make journalists awesome by facillitating community and collaboration. I am also the co-host of Says Who Podcast, a biweekly pod dedicated to helping people live through the current presidential administration. I also make a lot of other stuff.</p>
-      <p>Previously, I have taught journalism at Columbia College Chicago from 2008-2011, was a JSK Fellow at Stanford University from 2007-2008, and was the founder and editor of Punk Planet magazine from 1994 to 2007. Punk Planet spawned Independents Day Media, which also published Punk Planet Books (with Akashic Books) and Bail magazine.</p>
-    <div id="columns">
+      <p>Currently I am the director of <a href="https://www.opennews.org">OpenNews</a>, which helps make journalists awesome by facillitating community and collaboration. I am also the co-host of <a href="http://www.sayswhopodcast.com">Says Who Podcast</a>, a biweekly pod dedicated to helping people live through the current presidential administration. I also make a lot of other stuff.</p>
+      <p>Previously, I have taught journalism at <a href="https://www.colum.edu/academics/media-arts/communication/majors-and-programs.html">Columbia College Chicago</a> from 2008-2011, was a <a href="http://jsk.stanford.edu/">JSK Fellow</a> at Stanford University from 2007-2008, and was the founder and editor of <a href="http://www.punkplanet.com/">Punk Planet magazine</a> from 1994 to 2007. Punk Planet spawned Independents Day Media, which also published <a href="http://www.akashicbooks.com/catalog-tag/punk-planet-books/">Punk Planet Books</a> (with Akashic Books) and Bail magazine.</p>
       <h2>Recent Things</h2>
+      <ul>
       {% for recent in site.data.recents %}
-        <li><b><a href="{{ recent.link }}">{{ recent.title }}</a></b> | {{ recent.publication }} {{ recent.date | date: "%b %-d, %Y" }}</li>
+        <li><a href="{{ recent.link }}">{{ recent.title }}</a> | Published by {{ recent.publication }} on {{ recent.date | date: "%b %-d, %Y" }}</li>
       {% endfor %}
+      </ul>
       <h2>Stuff I've Made</h2>
+      <ul>
       {% for thing in site.data.things %}
         <li>{{ thing.title }}</li>
       {% endfor %}
+    </ul>
       <h2>My Books</h2>
-      <li><a href="https://www.amazon.com/ing-Epic-Twitter-Quest-MayorEmanuel/dp/1451655142/ref=sr_1_1?ie=UTF8&qid=1515963027&sr=8-1&keywords=%40MayorEmanuel">The F***ing Epic Twitter Quest of @MayorEmanuel</a></li>
-      <li><a href="https://www.amazon.com/We-Owe-You-Nothing-Expanded/dp/1933354321/ref=sr_1_1?s=books&ie=UTF8&qid=1515963065&sr=1-1&keywords=Punk+Planet+interviews">We Owe You Nothing: Punk Planet the Collected Interviews (Expanded Edition)</a></li>
-    </div>
+      <ul>
+      {% for book in site.data.books %}
+      <li><a href="{{ book.link }}">{{ book.title }}</a> | Published by {{ book.publisher }}, {{ book.date }}</li>
+      {% endfor %}
+    </ul>
     <h2>Speaking</h2>
       <p>I want to come speak at your thing about the current state of journalism innovation, independent production, making things that matter or whatever else you'd like me to come talk about (I mean, within reason). I'm represented by the <a href="http://www.chartwellspeakers.com/speaker/dan-sinker/">Chartwell Speakers Bureau</a> so click through and get in touch.</p>
     <h2>Press</h2>

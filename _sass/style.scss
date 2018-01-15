@@ -32,31 +32,30 @@ body {
     }
 
 
-a {
+a, p a {
     color: $brand-color;
-    text-decoration: none;
+    text-decoration: underline;
     &:hover{
-     color: $text-color;
+     font-weight: bold;
     }
 }
 
-
-
-p a {
-    color: $text-color;
-    text-decoration: none;
-    background: -webkit-linear-gradient(transparent 90%, lighten($brand-color, 10%) 10%);
-    box-shadow: inset 0 0 0 0 lighten($brand-color, 10%);
-    -webkit-transition: box-shadow ease 1s;
-	-moz-transition: box-shadow ease 1s;
-	transition: box-shadow ease 1s;
-    &:hover {
-        color: lighten($background-color, 50%);
-        box-shadow: inset 0 -100px 0 0 lighten($brand-color, 10%);
-
-    }
+ul {
+  margin-left: 0;
+  padding-left: 0;
 }
 
+li {
+  list-style: none;
+}
+
+li a {
+  text-decoration: none;
+  font-weight: bold;
+  &:hover{
+   text-decoration: underline;
+  }
+}
 
 figure {
     margin: 0;
