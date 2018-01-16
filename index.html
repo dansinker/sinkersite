@@ -11,15 +11,17 @@ layout: default
       <p>Currently I am the director of <a href="https://www.opennews.org">OpenNews</a>, which helps make journalists awesome by facillitating community and collaboration. I am also the co-host of <a href="http://www.sayswhopodcast.com">Says Who Podcast</a>, a biweekly pod dedicated to helping people live through the current presidential administration. I also make a lot of other stuff.</p>
       <p>Previously, I have taught journalism at <a href="https://www.colum.edu/academics/media-arts/communication/majors-and-programs.html">Columbia College Chicago</a> from 2008-2011, was a <a href="http://jsk.stanford.edu/">JSK Fellow</a> at Stanford University from 2007-2008, and was the founder and editor of <a href="http://www.punkplanet.com/">Punk Planet magazine</a> from 1994 to 2007. Punk Planet spawned Independents Day Media, which also published <a href="http://www.akashicbooks.com/catalog-tag/punk-planet-books/">Punk Planet Books</a> (with Akashic Books) and Bail magazine.</p>
       <h2>Recent Things</h2>
+      <p>I do a lot, so here's the most recent things I've put out in the world.</p>
       <ul>
       {% for recent in site.data.recents %}
         <li><a href="{{ recent.link }}">{{ recent.title }}</a> | Published by {{ recent.publication }} on {{ recent.date | date: "%b %-d, %Y" }}</li>
       {% endfor %}
       </ul>
       <h2>Stuff I've Made</h2>
+      <p>This list isn't definitive, but it's close.</p>
       <ul>
       {% for thing in site.data.things %}
-        <li>{% if thing.link != null %}<a href="{{ thing.link }}">{{ thing.title }}</a>{% else %}<b>{{ thing.title }}</b>{% endif %}: {{ thing.oneline }} {{ thing.date }} </li>
+        <li>{% if thing.link != null %}<a href="{{ thing.link }}">{{ thing.title }}</a>{% else %}<b>{{ thing.title }}</b>{% endif %}: {{ thing.oneline }} <b>{{ thing.date }}</b> </li>
       {% endfor %}
     </ul>
       <h2>My Books</h2>
@@ -28,6 +30,14 @@ layout: default
       <li><a href="{{ book.link }}">{{ book.title }}</a> | Published by {{ book.publisher }}, {{ book.date }}</li>
       {% endfor %}
     </ul>
+    <h2>Selected Writing</h2>
+    <p>I write about culture, politics, and technology. Occasionally I freelance so <a href="mailto:dansinker@gmail.com">get in touch</a>. Here's a few pieces I like.</p>
+    <ul>
+    {% for writing in site.data.writings %}
+    <li>{% if writing.selected == 'y' %}<a href="{{ writing.link }}">{{ writing.title }}</a> | {{ writing.publication }},  {{ writing.date | date: "%b %-d, %Y" }}{% endif %}
+          {% endfor %}
+    </ul>
+
     <h2>Speaking</h2>
       <p>I want to come speak at your thing about the current state of journalism innovation, independent production, making things that matter or whatever else you'd like me to come talk about (I mean, within reason). I'm represented by the <a href="http://www.chartwellspeakers.com/speaker/dan-sinker/">Chartwell Speakers Bureau</a> so click through and get in touch.</p>
     <h2>Press</h2>
