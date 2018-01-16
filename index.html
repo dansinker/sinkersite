@@ -30,14 +30,13 @@ layout: default
       <li><a href="{{ book.link }}">{{ book.title }}</a> | Published by {{ book.publisher }}, {{ book.date }}</li>
       {% endfor %}
     </ul>
-    <h2>Selected Writing</h2>
+    <h2>Writing</h2>
     <p>I write about culture, politics, and technology. Occasionally I freelance so <a href="mailto:dansinker@gmail.com">get in touch</a>. Here's a few pieces I like.</p>
     <ul>
     {% for writing in site.data.writings %}
     <li>{% if writing.selected == 'y' %}<a href="{{ writing.link }}">{{ writing.title }}</a> | {{ writing.publication }},  {{ writing.date | date: "%b %-d, %Y" }}{% endif %}
           {% endfor %}
     </ul>
-
     <h2>Speaking</h2>
       <p>I want to come speak at your thing about the current state of journalism innovation, independent production, making things that matter or whatever else you'd like me to come talk about (I mean, within reason). I'm represented by the <a href="http://www.chartwellspeakers.com/speaker/dan-sinker/">Chartwell Speakers Bureau</a> so click through and get in touch.</p>
     <h2>Press</h2>
