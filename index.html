@@ -3,13 +3,19 @@ layout: default
 ---
 <h1 class="headline">{{site.title}}</h1>
 <div class="article-list">
-    <h2>Hi There</h2>
-      <p>I love building things that resonate with communities. I started making things when I was 19 years old and have never stopped. I've founded companies and organizations, run events for thousands of people, written books, hosted podcasts, crafted essays and articles, made art, and so much more.</p>
-      <p>I'm constantly trying new things at home in Chicago or traveling around with my wife, two kids, and our dog in the back of our Airstream travel trailer, Evangeline.</p>
-      <p>I'd love to hear from you, so hit me on <a href="http://www.twitter.com/dansinker">Twitter</a> or <a href="mailto:dansinker@gmail.com">email</a>.
+    <h2>Hi, I'm Dan</h2>
+      <p>I love building new things that resonate with communities. I started my first company when I was a 19-year-old punk and have never stopped in the more than 20 years since. Over that time, I've founded companies and organizations, run events for thousands of people, written books, given keynotes, hosted podcasts, crafted essays and articles, made art, and so much more. I love pushing boundaries and redefining what's possible.</p>
+      <p>I'm constantly creating new things at home in Chicago or traveling around with my wife, two kids, and our dog in the back of our Airstream travel trailer, Evangeline.</p>
+      <p>I love new challenges and am a voracious problem solver. If your company or organization has a problem you'd like some help with, I'd love to hear from you, so hit me on <a href="http://www.twitter.com/dansinker">Twitter</a> or <a href="mailto:dansinker@gmail.com">email</a>.
     <h2>Things I&rsquo;ve done</h2>
-      <p>From 2011 until summer 2018 I was the director of <a href="https://www.opennews.org">OpenNews</a>, which helps make journalists awesome by facillitating community and collaboration. I am also the co-host of <a href="http://www.sayswhopodcast.com">Says Who Podcast</a>, a biweekly pod dedicated to helping people live through the current presidential administration and of <a href="https://www.thehitchpodcast.com">The Hitch</a> podcast, a travel podcast recorded in the back of my travel trailer.. I also make a lot of other stuff.</p>
-      <p>Previously, I have taught journalism at <a href="https://www.colum.edu/academics/media-arts/communication/majors-and-programs.html">Columbia College Chicago</a> from 2008-2011, was a <a href="http://jsk.stanford.edu/">JSK Fellow</a> at Stanford University from 2007-2008, and was the founder and editor of Punk Planet magazine from 1994 to 2007. Punk Planet spawned Independents Day Media, which also published <a href="http://www.akashicbooks.com/catalog-tag/punk-planet-books/">Punk Planet Books</a> (with Akashic Books) and Bail magazine.</p>
+      <p>While the path I've taken has never been a straight one, the throughlines have always been communities, communication, and amplifying voices at the edges.</p>
+      <p>From 2011 until summer 2018 I was the director of <a href="https://www.opennews.org">OpenNews</a>, which helps make journalism-technologists in some of the best newsrooms in the world more awesome by facillitating community and collaboration among them. My work at OpenNews included founding the Knight-Mozilla Fellowships, which placed creative technologists into newsrooms around the world, and SRCCON a yearly conference built around highly-participatory problem solving and skill sharing among the best technologists in journalism.</p>
+      <p>At just 19, I founded Punk Planet magazine, an independent music, politics and culture magazine that helped to document the independent music and art scenes of the 1990s and 2000s. Punk Planet is widely credited as the definitive voice of independent culture in that time as well as helping to bridge the gap between cuture and activism. Constantly blazing new paths for 13 years, we also <a href="http://www.akashicbooks.com/catalog-tag/punk-planet-books/">published books</a> in collaboration with stalwart indie publisher Akashic Books.</p>
+      <p>I continued my commitment to independent media production as the co-host of <a href="http://www.sayswhopodcast.com">Says Who Podcast</a>, a biweekly pod dedicated to helping people survive the current presidential administration through comedy and coping and of <a href="https://www.thehitchpodcast.com">The Hitch</a> podcast, a podcast about road tripping and adventure, often recorded in the back of my travel trailer.</p>
+      <p>One of the things I'm most notorious for was the @MayorEmanuel Twitter account, back in 2010 & 2011. The account, written anonymously at the time, told a fantastical story of an alternate-universe Chicago during the 2011 Mayoral Election. By the time the account wrapped up, <a href="https://www.economist.com/prospero/2011/10/05/the-first-real-work-of-digital-literature">The Economist</a> said it "may be the first truly great piece of digital literary work."
+      <p>In addition to making all this (and more), I have taught journalism as a member of the full-time faculty at <a href="https://www.colum.edu/academics/media-arts/communication/majors-and-programs.html">Columbia College Chicago</a> from 2008-2011 and was a <a href="http://jsk.stanford.edu/">JSK Fellow</a> at Stanford University from 2007-2008 where I studied the impact of mobile technology on storytelling.
+      <p>I've done so much more than this. <a href="#biglist">A (mostly) defininitive list is at the end of this page</a>.
+
       <h2>Recent Things</h2>
       <p>I do a lot, so here's the most recent things I've put out in the world.</p>
       <ul>
@@ -17,34 +23,47 @@ layout: default
         <li><a href="{{ recent.link }}">{{ recent.title }}</a> | Published by {{ recent.publication }} on {{ recent.date | date: "%b %-d, %Y" }}</li>
       {% endfor %}
       </ul>
-      <h2>Stuff I've Made</h2>
-      <p>This list isn't definitive, but it's close.</p>
+
+      <h2>Speaking</h2>
+        <p>I want to come speak at your thing about the current state of journalism innovation, independent production, making things that matter or whatever else you'd like me to come talk about (I mean, within reason). I'm represented by the <a href="http://www.chartwellspeakers.com/speaker/dan-sinker/">Chartwell Speakers Bureau</a> so click through and get in touch.</p>
+
+    <!--  <h2>Press</h2>
+        <p>I've appeared on TV, been written up in magazines and newspapers, done podcasts, whatever. If you'd like to get in touch to cover something I'm up to, feel free to <a href="mailto:dansinker@gmail.com">get in touch</a>. I'd love to hear from you!
+    -->
+      <h2>Drop a line</h2>
+        <p>If you're looking for me, here are the best places to find me:
+          <ul>
+          {% for contact in site.data.contacts %}
+          <li>{{ contact.service }}: <a href="{{ contact.link }}">{{ contact.userid }}</a>
+          {% endfor %}
+        </ul>
+
+      <h2>My Books</h2>
+          <ul>
+          {% for book in site.data.books %}
+          <li><a href="{{ book.link }}">{{ book.title }}</a> | Published by {{ book.publisher }}, {{ book.date }}</li>
+          {% endfor %}
+        </ul>
+
+
+      <h2>Writing</h2>
+        <p>I write about culture, politics, and technology. Occasionally I freelance so <a href="mailto:dansinker@gmail.com">get in touch</a>. Here's a few pieces I like.</p>
+        <ul>
+        {% for writing in site.data.writings %}
+        <li>{% if writing.selected == 'y' %}<a href="{{ writing.link }}">{{ writing.title }}</a> | {{ writing.publication }},  {{ writing.date | date: "%b %-d, %Y" }}{% endif %}
+              {% endfor %}
+        </ul>
+
+      <h2 id="biglist">A look at all the stuff I've made</h2>
+      <p>Well, probably not "all," but it's close.</p>
       <ul>
       {% for thing in site.data.things %}
         <li>{% if thing.link != null %}<a href="{{ thing.link }}">{{ thing.title }}</a>{% else %}<b>{{ thing.title }}</b>{% endif %}: {{ thing.oneline }} <b>{{ thing.date }}</b> </li>
       {% endfor %}
     </ul>
-      <h2>My Books</h2>
-      <ul>
-      {% for book in site.data.books %}
-      <li><a href="{{ book.link }}">{{ book.title }}</a> | Published by {{ book.publisher }}, {{ book.date }}</li>
-      {% endfor %}
-    </ul>
-    <h2>Writing</h2>
-    <p>I write about culture, politics, and technology. Occasionally I freelance so <a href="mailto:dansinker@gmail.com">get in touch</a>. Here's a few pieces I like.</p>
-    <ul>
-    {% for writing in site.data.writings %}
-    <li>{% if writing.selected == 'y' %}<a href="{{ writing.link }}">{{ writing.title }}</a> | {{ writing.publication }},  {{ writing.date | date: "%b %-d, %Y" }}{% endif %}
-          {% endfor %}
-    </ul>
-    <h2>Speaking</h2>
-      <p>I want to come speak at your thing about the current state of journalism innovation, independent production, making things that matter or whatever else you'd like me to come talk about (I mean, within reason). I'm represented by the <a href="http://www.chartwellspeakers.com/speaker/dan-sinker/">Chartwell Speakers Bureau</a> so click through and get in touch.</p>
-    <h2>Press</h2>
-      <p>I've appeared on TV, been written up in magazines and newspapers, done podcasts, whatever. If you'd like to get in touch to cover something I'm up to, feel free to <a href="mailto:dansinker@gmail.com">get in touch</a>. I'd love to hear from you!
-    <h2>Drop a line</h2>
-      <p>If you're looking for me, here are the best places to find me:
-        {% for contact in site.data.contacts %}
-        <li>{{ contact.service }}: <a href="{{ contact.link }}">{{ contact.userid }}</a>
-        {% endfor %}
-    <!--<div style="background-color:#000000;width:100%;height:100%;"><div style="padding:4px;"><iframe src="//media.mtvnservices.com/embed/mgid:arc:video:comedycentral.com:3ac26644-ed01-11e0-aca6-0026b9414f30" width="800" height="400" frameborder="0" allowfullscreen="true"></iframe></div></div>-->
+
+
+  <h2>Oh yeah, also there's this</h2>
+  <p>Yeah, OK, I was on the Colbert Show.
+    <div style="background-color:#000000;width:100%;height:100%;"><div style="padding:4px;"><iframe src="//media.mtvnservices.com/embed/mgid:arc:video:comedycentral.com:3ac26644-ed01-11e0-aca6-0026b9414f30" width="800" height="400" frameborder="0" allowfullscreen="true"></iframe></div></div>
 </div>
