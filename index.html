@@ -18,19 +18,21 @@ layout: default
       <p>In addition to making all this (and more), I have taught journalism as a member of the full-time faculty at <a href="https://www.colum.edu/academics/media-arts/communication/majors-and-programs.html">Columbia College Chicago</a> from 2008-2011 and was a <a href="http://jsk.stanford.edu/">JSK Fellow</a> at Stanford University from 2007-2008 where I studied the impact of mobile technology on storytelling.
       <p>I've done so much more than this. <a href="#biglist">A (mostly) defininitive list is at the end of this page</a>.
 
-        <h2>Speaking</h2>
-          <p>I want to come speak at your event. I can talk about technology and people, the current state of journalism (and its future), independent production, making things that matter, or whatever else you'd like me to come talk about (I mean, within reason). I'm represented by the <a href="http://www.chartwellspeakers.com/speaker/dan-sinker/">Chartwell Speakers Bureau</a> so click through and get in touch.</p>
+        <h2>Let's work together</h2>
+          <p>I'd love to talk about how we might do stuff together. Here are the best ways to get in touch with me:
+            <ul>
+            {% for contact in site.data.contacts %}
+            <li>{{ contact.service }}: <a href="{{ contact.link }}">{{ contact.userid }}</a>
+           {% endfor %}
+          </ul>
+
+        <h2>I Can Come and Speak</h2>
+          <p>I give keynote presentations that keep people talking. I can speak about technology and people, the current state of journalism (and its future), independent production, making things that matter, or whatever else you'd like me to come talk about (I mean, within reason). I'm represented by the <a href="http://www.chartwellspeakers.com/speaker/dan-sinker/">Chartwell Speakers Bureau</a> so click through and get in touch.</p>
 
       <!--  <h2>Press</h2>
           <p>I've appeared on TV, been written up in magazines and newspapers, done podcasts, whatever. If you'd like to get in touch to cover something I'm up to, feel free to <a href="mailto:dansinker@gmail.com">get in touch</a>. I'd love to hear from you!
       -->
-        <h2>Drop a line</h2>
-          <p>If you're looking for me, here are the best places to find me:
-            <ul>
-            {% for contact in site.data.contacts %}
-            <li>{{ contact.service }}: <a href="{{ contact.link }}">{{ contact.userid }}</a>
-    <        {% endfor %}
-          </ul>
+
       <h2>Recent Things</h2>
       <p>I do a lot, so here's the most recent things I've put out in the world.</p>
       <ul>
