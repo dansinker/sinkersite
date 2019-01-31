@@ -41,6 +41,13 @@ layout: default
       {% endfor %}
       </ul>
 
+      <h2>Writing</h2>
+        <p>I write about culture, politics, and technology. Occasionally I freelance so <a href="mailto:dansinker@gmail.com">get in touch</a>. Here's what I've written recently.</p>
+        <ul>
+        {% for recent in site.data.recents %}
+        <li>{% if recent.writing == 'y' %}<a href="{{ recent.link }}">{{ recent.title }}</a> | {{ recent.publication }},  {{ recent.date | date: "%b %-d, %Y" }}{% endif %}
+              {% endfor %}
+        </ul>
 
       <h2>My Books</h2>
           <ul>
@@ -50,15 +57,7 @@ layout: default
         </ul>
 
 
-      <h2>Writing</h2>
-        <p>I write about culture, politics, and technology. Occasionally I freelance so <a href="mailto:dansinker@gmail.com">get in touch</a>. Here's what I've written recently.</p>
-        <ul>
-        {% for recent in site.data.recents %}
-        <li>{% if recent.writing == 'y' %}<a href="{{ recent.link }}">{{ recent.title }}</a> | {{ recent.publication }},  {{ recent.date | date: "%b %-d, %Y" }}{% endif %}
-              {% endfor %}
-        </ul>
-
-      <h2 id="biglist">A look at all the stuff I've made</h2>
+      <h2 id="biglist">A look at all the stuff I've done</h2>
       <p>Well, probably not "all," but it's close.</p>
       <ul>
       {% for thing in site.data.things %}
