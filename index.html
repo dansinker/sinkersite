@@ -51,7 +51,7 @@ layout: default
 
 
       <h2>Writing</h2>
-        <p>I write about culture, politics, and technology. Occasionally I freelance so <a href="mailto:dansinker@gmail.com">get in touch</a>. Here's a few pieces I like.</p>
+        <p>I write about culture, politics, and technology. Occasionally I freelance so <a href="mailto:dansinker@gmail.com">get in touch</a>. Here's what I've written recently.</p>
         <ul>
         {% for recent in site.data.recents %}
         <li>{% if recent.writing == 'y' %}<a href="{{ recent.link }}">{{ recent.title }}</a> | {{ recent.publication }},  {{ recent.date | date: "%b %-d, %Y" }}{% endif %}
