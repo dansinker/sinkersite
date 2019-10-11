@@ -1,6 +1,6 @@
 - service: Mail
-  userid: dansinker@gmail.com
-  link: mailto:dansinker@gmail.com
+  userid: dan@dansinker.com
+  link: mailto:dan@dansinker.com
 - service: Twitter
   userid: dansinker
   link: https://www.twitter.com/dansinker
