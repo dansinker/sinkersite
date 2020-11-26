@@ -16,8 +16,13 @@ layout: default
          {% endfor %}
         </ul>
 
-      <h2>I Can Come and Speak</h2>
-        <p>I give keynote presentations that keep people talking. I can speak about technology and people, the current state of journalism (and its future), independent production, making things that matter, or whatever else you'd like me to come talk about (I mean, within reason). I'm represented by the <a href="http://www.chartwellspeakers.com/speaker/dan-sinker/">Chartwell Speakers Bureau</a> so click through and get in touch.</p>
+    <h2>Recent Things</h2>
+      <p>I do a lot, so here's the most recent things I've put out in the world.</p>
+        <ul>
+        {% for recent in site.data.recents limit:5 %}
+          <li><a href="{{ recent.link }}">{{ recent.title }}</a> | Published by {{ recent.publication }} on {{ recent.date | date: "%b %-d, %Y" }}</li>
+        {% endfor %}
+        </ul>
 
     <h2>Things I&rsquo;ve done</h2>
       <p>While the path I've taken has never been a straight one, the throughlines have always been communities, communication, and amplifying voices at the edges.</p>
@@ -29,18 +34,9 @@ layout: default
       <p>In addition to making all this (and more), I have taught journalism as a member of the full-time faculty at <a href="https://www.colum.edu/academics/media-arts/communication/majors-and-programs.html">Columbia College Chicago</a> from 2008-2011 and was a <a href="http://jsk.stanford.edu/">JSK Fellow</a> at Stanford University from 2007-2008 where I studied the impact of mobile technology on storytelling.
       <p>I've done so much more than this. <a href="#biglist">A (mostly) defininitive list is at the end of this page</a>.
 
-
       <!--  <h2>Press</h2>
           <p>I've appeared on TV, been written up in magazines and newspapers, done podcasts, whatever. If you'd like to get in touch to cover something I'm up to, feel free to <a href="mailto:dansinker@gmail.com">get in touch</a>. I'd love to hear from you!
       -->
-
-      <h2>Recent Things</h2>
-      <p>I do a lot, so here's the most recent things I've put out in the world.</p>
-      <ul>
-      {% for recent in site.data.recents limit:5 %}
-        <li><a href="{{ recent.link }}">{{ recent.title }}</a> | Published by {{ recent.publication }} on {{ recent.date | date: "%b %-d, %Y" }}</li>
-      {% endfor %}
-      </ul>
 
       <h2>Writing</h2>
         <p>I write about culture, politics, and technology. Occasionally I freelance so <a href="mailto:dansinker@gmail.com">get in touch</a>. Here's what I've written recently.</p>
@@ -66,6 +62,8 @@ layout: default
       {% endfor %}
     </ul>
 
+    <h2>I Can Come and Speak</h2>
+    <p>I give keynote presentations that keep people talking. I can speak about technology and people, the current state of journalism (and its future), independent production, making things that matter, or whatever else you'd like me to come talk about (I mean, within reason). I'm represented by the <a href="http://www.chartwellspeakers.com/speaker/dan-sinker/">Chartwell Speakers Bureau</a> so click through and get in touch.</p>
 
   <h2>Oh yeah, also there's this</h2>
   <p>I was on the Colbert Report.
