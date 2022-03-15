@@ -1,8 +1,23 @@
+- title: If We're Back to 'Normal,' Why Am I Still So Exhausted All the Time?
+  publication: Esquire
+  date: 2022-03-14
+  link: https://www.esquire.com/lifestyle/a39429041/what-is-normal-after-pandemic/
+  writing: y
+  linkpage: y
+- title: Efficiency! 
+  publication: Says Who
+  date: 2022-03-09
+  link: https://sayswhopodcast.com/episodes/efficency
+- title: Happy Meal Express
+  publication: Says Who
+  date: 2022-03-03
+  link: https://sayswhopodcast.com/episodes/happymeal
 - title: The Wrestler
   publication: Esquire
   date: 2022-02-28
   writing: y
   link: https://www.esquire.com/sports/a39008053/cm-punk-aew-profile/
+  linkpage: y
 - title: You Can't Handle the Truth
   publication: Says Who
   date: 2022-02-23
@@ -29,6 +44,7 @@
   date: 2022-01-25
   link: https://www.esquire.com/entertainment/music/a38867790/john-darnielle-mountain-goats-devil-house-interview/
   writing: y
+  linkpage: y
 - title: The Full Banana
   publication: Says Who
   date: 2022-01-19
@@ -62,6 +78,7 @@
   date: 2021-12-18
   link: https://www.theatlantic.com/culture/archive/2021/12/pee-wee-herman-playhouse-radio-pandemic/621047/
   writing: y
+  linkpage: y
 - title: Mind Jenga
   publication: Says Who
   date: 2021-12-15
@@ -150,6 +167,7 @@
   link: https://www.theatlantic.com/ideas/archive/2021/08/parents-are-not-okay/619859/
   date: 2021-08-22
   writing: y
+  linkpage: y
 - title: The Deeply Unfair Question Parents Must Answer
   publication: Esquire
   link: https://www.esquire.com/lifestyle/a37353539/covid-delta-variant-children-back-to-school/
