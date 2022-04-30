@@ -4,6 +4,9 @@
 - service: Twitter
   userid: dansinker
   link: https://www.twitter.com/dansinker
+- service: Instagram
+userid: dansinker
+link: https://www.instagram.com/dansinker
 - service: Github
   userid: sinker
   link: https://www.github.com/sinker
