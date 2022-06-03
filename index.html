@@ -1,7 +1,6 @@
 ---
 layout: default
 ---
-<h1 class="headline">{{site.title}}</h1>
 <img src="/images/headshot.JPG">
 <div class="article-list">
     <h2>Hi, I'm Dan</h2>
@@ -30,13 +29,7 @@ layout: default
           <p>I've appeared on TV, been written up in magazines and newspapers, done podcasts, whatever. If you'd like to get in touch to cover something I'm up to, feel free to <a href="mailto:dansinker@gmail.com">get in touch</a>. I'd love to hear from you!
       -->
 
-      <h2>Writing</h2>
-        <p>I write about culture, politics and technology. Occasionally I freelance so <a href="mailto:dansinker@gmail.com">get in touch</a>. Here's what I've written recently.</p>
-        <ul>
-        {% for recent in site.data.recents %}
-        <li>{% if recent.writing == 'y' %}<a href="{{ recent.link }}">{{ recent.title }}</a> | {{ recent.publication }},  {{ recent.date | date: "%b %-d, %Y" }}{% endif %}
-              {% endfor %}
-        </ul>
+     
 
       <h2>My Books</h2>
           <ul>
