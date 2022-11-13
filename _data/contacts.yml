@@ -7,6 +7,9 @@
 - service: Instagram
   userid: dansinker
   link: https://www.instagram.com/dansinker
+- service: Mastadon
+  userid: dansinker
+  link: https://omfg.town/@dansinker
 - service: Github
   userid: dansinker
   link: https://www.github.com/dansinker
