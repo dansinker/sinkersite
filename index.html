@@ -11,7 +11,7 @@ layout: default
         <p>I'd love to talk about how we might do stuff together. Here are the best ways to get in touch with me:
           <ul>
           {% for contact in site.data.contacts %}
-          <li>{{ contact.service }}: <a href="{{ contact.link }}">{{ contact.userid }}</a>
+          <li>{{ contact.service }}: <a rel="me" href="{{ contact.link }}">{{ contact.userid }}</a>
          {% endfor %}
         </ul>
     <h2>Recent Things</h2>
